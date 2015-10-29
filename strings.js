@@ -9,7 +9,7 @@ function Utils(){
 	 * 	text: The text with the {n} tokens to be replaced. 
 	 * 
 	 * */
-	function replaceToken(stringArray, text){
+	this.replaceToken = function(stringArray, text){
 		return text.replace(/\{(\d+)\}/g, function(match, contents, offset, stringArray) {
 		    return strings[contents];
 		});
